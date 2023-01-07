@@ -46,18 +46,20 @@
 </head>
 <body>
     <div class="main">
-        <input type="text" id="input1">
+        <input type="text">
         <p class="wrote"></p>
         <button onclick="print()">click here</button>
     </div>
 
     <script>
         function print() {
-            var inp = document.getElementById("input1").value 
-            console.log(inp)
-            var pa = document.getElementsByClassName("wrote")
-            pa[0].innerHTML = inp
+            // var inp = document.getElementById("input1").value 
+            var inp = document.getElementsByTagName("input")[0].value 
+            // console.log(inp)
+            var pa = document.getElementsByClassName("wrote")[0].innerHTML=inp
+            // pa[0].innerHTML = inp 
         }
+       
     </script>
 </body>
 </html>
